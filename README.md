@@ -40,9 +40,10 @@ ACTIVITIES={
     "2029743966":"Nightfall"
 }
 ```
-and assign `NUMBER = "your phone number"`
 2. go to your google account and create an app password and add 
 `EMAIL = "your gmail"` and `PASSWORD = "app password"` making sure to delete the spaces from your 16 char generated password.
+3. Add `NUMBER="your number"` and `CARRIER="your carrier gateway"` to your environment variables
+
 
 ### Step 3: Install dependencies
 Install the required python packages `pip install -r requirements.txt` 

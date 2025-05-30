@@ -25,6 +25,7 @@ activities = os.getenv("ACTIVITIES")
 cache_db_path = os.getenv("CACHE_DB_PATH")
 manifest_db_path = os.getenv("MILESTONE_DB_PATH")
 number = os.getenv("NUMBER")
+carrier = os.getenv("CARRIER_GATEWAY")
 
 class DestinyAPIService:
     def __init__(self, api_key, header, authorization_url,
@@ -293,7 +294,7 @@ if __name__ == "__main__":
     if upcoming_activities:
         email_service.send_sms_via_email(
             phone_number=f"{number}",
-            carrier_gateway="tmomail.net",
+            carrier_gateway=f"{carrier}",
             message=upcoming_activities
         )
     else:
